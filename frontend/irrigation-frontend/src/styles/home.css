@@ -1,0 +1,460 @@
+
+/* =====================
+  MAIN BUTTON STYLES 
+===================== */
+:root{
+  --success: #348E38;
+  --light: #E8F5E9;
+    --dark: #0F4229;
+}
+.container, .container-fluid {
+    max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+/* Main Primary Button */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  z-index: 1;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.177);
+  border-radius: 75%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease, opacity 1s ease;
+  z-index: 2;
+  
+}
+
+.btn:hover::before {
+  width: 300%;
+  height: 300%;
+  opacity: 0;
+}
+
+
+.btn-success {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  box-shadow: 0 6px 18px rgba(39, 174, 96, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Outline Button */
+.btn-outline-success {
+  background: transparent;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+}
+
+.btn-outline-success:hover {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+}
+
+
+
+/* =====================
+   TOP FEATURE SECTION
+===================== */
+.top-feature {
+  background: transparent;
+}
+
+/* Desktop overlap with carousel */
+@media (min-width: 992px) {
+  .top-feature {
+    position:relative;
+    margin-top: -60px;
+    z-index: 1;
+  }
+}
+
+/* Feature Card */
+.feature-box {
+  min-height: 120px;
+  min-width: auto;
+  background: #ffffff;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  transition: all 0.35s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Circle */
+.btn-lg-square {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+.btn-lg-square img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Text */
+.feature-text {
+  color: rgba(1, 1, 90, 0.668);
+  font-size: 15px;
+}
+
+/* Fade animation replacement of WOW */
+.fade-in {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .feature-box {
+    padding: 20px !important;
+    min-height: 130px;
+  }
+
+  .btn-lg-square {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .feature-box {
+    text-align: center;
+  }
+
+  .feature-box .btn-lg-square {
+    margin-bottom: 15px;
+  }
+}
+/* =====================
+   END TOP FEATURE SECTION
+
+
+
+
+   
+   /* =====================
+   About SECTION Animation
+===================== */
+.fade-in {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================
+   END About SECTION Animation
+
+
+
+    /* =====================
+   FACTS SECTION Animation
+===================== */
+.facts {
+  position: relative;
+}
+
+.facts::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.facts .container {
+  position: relative;
+  z-index: 1;
+}
+
+.facts h1 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.facts span {
+  letter-spacing: 0.5px;
+}
+
+/* =====================
+   END FACTS SECTION Animation */
+
+
+
+    /* =====================
+   FEATURES SECTION Animation
+===================== */
+.btn-square {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-square:hover {
+transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.6);
+}
+
+
+    /* =====================
+   PRODUCT SECTION Animation
+===================== */
+
+ 
+/*** Service ***/
+.service-item {
+    position: relative;
+    text-align: center;
+}
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: .3s;
+    z-index: -1;
+}
+
+.service-item:hover .service-img img {
+    transform: scale(1);
+}
+
+.service-item .service-text {
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.service-item:hover .service-text {
+    background: rgba(15, 66, 41, .6);
+}
+
+.service-item .service-text h4,
+.service-item .service-text p {
+    transition: .3;
+}
+
+.service-item:hover .service-text h4 {
+    color: #FFFFFF;
+}
+
+.service-item:hover .service-text p {
+    color: var(--light);
+}
+
+.service-item .service-text .btn-square {
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    transition: .5s;
+}
+
+.service-item:hover .service-text .btn-square {
+    background: var(--light);
+}
+
+.service-item .service-text .btn {
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--dark);
+    background: var(--light);
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.service-item:hover .service-text .btn {
+    width: 112px;
+}
+img{
+ max-width: 100%;
+  height: auto;
+}
+
+/*** Buttons ***/
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+/* Main Primary Button */
+.btn-success {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  box-shadow: 0 6px 18px rgba(39, 174, 96, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Outline Button */
+.btn-outline-success {
+  background: transparent;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+}
+
+.btn-outline-success:hover {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);
+}
+
+/* Ripple Effect */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 75%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease, opacity 1s ease;
+  z-index: 2;
+  
+}
+
+.btn:hover::before {
+  width: 300%;
+  height: 300%;
+  opacity: 0;
+}
+
+/* Text stays above the ripple */
+.btn div{
+  position: relative;
+  
+}
+
+/* Square & Size Variants */
+.btn-square {
+  width: 42px;
+  height: 42px;
+}
+
+.btn-sm-square {
+  width: 34px;
+  height: 34px;
+}
+
+.btn-lg-square {
+  width: 70px;
+  height: 70px;
+  margin-left: 4%;
+  margin-top: 1%;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+  transition: all 0.3s ease;
+}
+
+.btn-square:hover,
+.btn-sm-square:hover,
+.btn-lg-square:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(39, 174, 96, 0.6);
+}

@@ -1,0 +1,20 @@
+const countryCodes = [
+  { code: "+91", country: "India" },
+  { code: "+1", country: "USA / Canada" },
+  { code: "+44", country: "UK" },
+  { code: "+61", country: "Australia" },
+  { code: "+971", country: "UAE" },
+  { code: "+92", country: "Pakistan" },
+  { code: "+880", country: "Bangladesh" },
+  { code: "+49", country: "Germany" },
+  { code: "+33", country: "France" },
+  { code: "+39", country: "Italy" },
+  { code: "+81", country: "Japan" },
+  { code: "+86", country: "China" },
+  { code: "+7", country: "Russia" },
+  { code: "+27", country: "South Africa" },
+  { code: "+55", country: "Brazil" },
+  // 👉 you can extend this list anytime
+];
+
+export default countryCodes;

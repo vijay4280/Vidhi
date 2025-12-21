@@ -1,0 +1,165 @@
+/* =====================
+   NAVBAR BASE
+===================== */
+.main-navbar {
+  background: rgb(177, 226, 177);
+  padding: 10px 34px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  height: 4.9rem;
+}
+
+/* =====================
+   LOGOS
+===================== */
+.logo-left {
+  height: 75px;
+}
+
+.logo-right {
+  height: 45px;
+  text-align: center;
+}
+
+.left-logo,
+.right-logo {
+  display: flexbox;
+  align-items: center;
+}
+
+/* =====================
+   SEARCH BAR COMMON
+===================== */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 40px;
+  padding: 4px;
+}
+
+.navbar-search input {
+  border:#fff;
+  outline: none;
+  padding: 2px 18px;
+  width: 100%;
+}
+
+.navbar-search button {
+  background: #0a7d40;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 50%;
+}
+
+/* =====================
+   DESKTOP SEARCH
+===================== */
+.desktop-search {
+  width: 450px;
+  margin: 0 20px;
+  margin-left: 50px;
+}
+
+/* =====================
+   MOBILE SEARCH
+===================== */
+.mobile-search {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* =====================
+   NAV LINKS
+===================== */
+.navbar-nav {
+  gap: 10px;
+  font-weight: 400;
+ font-size: large;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #064420 !important;
+  font-size: x-small;
+
+
+  
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0ea153 !important;
+}
+
+/* =====================
+   DROPDOWN
+===================== */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.dropdown-item:hover {
+  background: #e9f7ef;
+  color: #24d275;
+}
+
+/* =====================
+   MOBILE RESPONSIVE FIX
+===================== */
+@media (max-width: 992px) {
+
+  /* ❌ DESKTOP SEARCH HIDE */
+  .desktop-search {
+    display: none !important;
+  }
+
+  /* ✅ MOBILE SEARCH DEFAULT HIDDEN */
+  .mobile-search {
+    display: flex;
+  }
+
+  .right-logo {
+    display: none;
+  }
+
+  .logo-left {
+    height: 65px;
+  }
+
+  .navbar-collapse {
+    background: #eaf7ee;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+/* =====================
+   TOGGLER
+===================== */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Right logo mobile size */
+.logo-right-mobile {
+  height: 45px;
+}
+
+/* Margin for mobile search icon */
+.mobile-search-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #064420;
+}

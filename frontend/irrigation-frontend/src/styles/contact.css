@@ -1,0 +1,59 @@
+.page-header {
+  background: linear-gradient(120deg, #2ecc71, #27ae60);
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+  height: 140px;
+}
+
+
+.phone-input {
+  width: 100% !important;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  flex: 1;
+  text-align: center;
+  padding: 14px;
+  background: #25d366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+:root{
+  --success: #348E38;
+  --light: #E8F5E9;
+    --dark: #0F4229;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container, .container-fluid {
+    max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
