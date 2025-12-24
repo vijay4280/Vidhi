@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGO_URI)
   .then(async () => {
     console.log("MongoDB Connected");
 
-    const adminExists = await Admin.findOne({ email: "vpal77627@gmail.com" });
+    const adminExists = await Admin.findOne({ email: "anything@gmail.com" });
 
     if (adminExists) {
       console.log("Admin already exists");
@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI)
     }
 
     await Admin.create({
-      email: "vpal77627@gmail.com",
+      email: "anything@gmail.com",
       password: "admin@123"
     });
 
